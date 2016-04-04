@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Descent Rate Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_profile">CreateProfile</string>
+    <string name="title_activity_saved_profile">SavedProfile</string>
+    <string name="title_activity_plane_profile">PlaneProfile</string>
+    <string name="button1">CALCULATE DESCENT RATE</string>
+    <string name="textView18">DESCENT RATE CALCULATOR</string>
+
+</resources>

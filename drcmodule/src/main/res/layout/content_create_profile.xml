@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nitroja.kbennett.CreateProfile"
+    tools:showIn="@layout/activity_create_profile"
+    android:background="#e8e9ec">
+
+    <EditText
+        android:layout_width=" 56dp"
+        android:layout_height="43dp"
+        android:id="@+id/altitude"
+        android:layout_marginTop="26dp"
+        android:maxLength="5"
+        android:hint="a"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView13"
+        android:inputType="numberDecimal"
+        android:layout_alignStart="@+id/convert1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="feet"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/altitude"
+        android:layout_toEndOf="@+id/altitude"
+        android:layout_alignParentEnd="false"
+        android:layout_marginBottom="6dp"
+        android:textColor="#ff4040" />
+
+    <EditText
+        android:layout_width="56dp"
+        android:layout_height="43dp"
+        android:id="@+id/editText3"
+        android:layout_marginStart="8dp"
+        android:layout_alignBottom="@+id/convert1"
+        android:layout_toEndOf="@+id/convert1"
+        android:layout_alignTop="@+id/speed"
+        android:focusable="false"
+        android:textSize="15sp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="56dp"
+        android:layout_height="43dp"
+        android:id="@+id/speed"
+        android:layout_marginTop="17dp"
+        android:hint="s"
+        android:textSize="15sp"
+        android:maxLength="3"
+        android:textAlignment="center"
+        android:layout_below="@+id/altitude"
+        android:inputType="numberDecimal"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="knots"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/speed"
+        android:layout_toEndOf="@+id/speed"
+        android:layout_marginBottom="6dp"
+        android:textColor="#ff4040" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:text="convert"
+        android:id="@+id/convert1"
+        android:background="#963ee628"
+        android:layout_alignBottom="@+id/speed"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="km/h"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_toEndOf="@+id/editText3"
+        android:layout_marginBottom="6dp"
+        android:textColor="#ff4040" />
+
+    <EditText
+        android:layout_width="56dp"
+        android:layout_height="43dp"
+        android:id="@+id/distance"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/speed"
+        android:layout_alignStart="@+id/speed"
+        android:textSize="15sp"
+        android:hint="d"
+        android:maxLength="4"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nm"
+        android:id="@+id/textView4"
+        android:layout_alignBottom="@+id/distance"
+        android:layout_toEndOf="@+id/distance"
+        android:layout_marginBottom="6dp"
+        android:textColor="#ff4040" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:text="convert"
+        android:id="@+id/convert2"
+        android:background="#963ee628"
+        android:layout_alignBottom="@+id/distance"
+        android:layout_alignStart="@+id/convert1" />
+
+    <EditText
+        android:layout_width="56dp"
+        android:layout_height="43dp"
+        android:id="@+id/editText5"
+        android:layout_alignBottom="@+id/convert2"
+        android:layout_alignStart="@+id/editText3"
+        android:focusable="false"
+        android:textSize="15sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="km"
+        android:id="@+id/textView5"
+        android:textColor="#ff4040"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/editText5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="distance from runway (km) / speed (km/h) = "
+        android:id="@+id/textView6"
+        android:layout_marginTop="29dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/distance"
+        android:layout_alignStart="@+id/distance" />
+
+    <EditText
+        android:layout_width="56dp"
+        android:layout_height="43dp"
+        android:id="@+id/ans1"
+        android:layout_below="@+id/textView6"
+        android:layout_alignEnd="@+id/textView2"
+        android:textSize="15sp"
+        android:focusable="false"
+        android:maxLength="6"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x 60 ="
+        android:id="@+id/textView7"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/ans1"
+        android:layout_toStartOf="@+id/convert2"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="-38dp" />
+
+    <EditText
+        android:layout_width="56dp"
+        android:layout_height="43dp"
+        android:id="@+id/ans2"
+        android:layout_below="@+id/textView6"
+        android:layout_toStartOf="@+id/textView8"
+        android:focusable="false"
+        android:textSize="15sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mins"
+        android:id="@+id/textView8"
+        android:textColor="#ff4040"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignEnd="@+id/editText5"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="altitude (feet) / time to reach the runway (mins) ="
+        android:id="@+id/textView9"
+        android:layout_marginTop="14dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/ans1"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="56dp"
+        android:layout_height="43dp"
+        android:id="@+id/ans3"
+        android:textStyle="bold"
+        android:textColor="#007cc5"
+        android:focusable="false"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="descend at"
+        android:id="@+id/textView10"
+        android:textColor="#ff4040"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/ans3"
+        android:layout_alignBottom="@+id/ans3"
+        android:layout_toStartOf="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="feet/min"
+        android:id="@+id/textView11"
+        android:textColor="#ff4040"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/ans3"
+        android:layout_alignBottom="@+id/ans3"
+        android:layout_toEndOf="@+id/convert2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DRC"
+        android:id="@+id/textView12"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff4040"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="enter altitude, speed, and distance"
+        android:id="@+id/textView13"
+        android:layout_marginTop="24dp"
+        android:textColor="#ff4040"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView12"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:text="save"
+        android:id="@+id/button4"
+        android:background="#007cc5"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/editText5" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:text="convert"
+        android:id="@+id/convert3"
+        android:background="#963ee628"
+        android:layout_alignTop="@+id/button4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVED!"
+        android:id="@+id/textView14"
+        android:layout_alignTop="@+id/convert3"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff4040"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="27dp"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textColor="#007cc5"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+</RelativeLayout>
